@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/bg"
+	android:gravity="center_vertical">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/MainMenu_Layout"
+		android:orientation="vertical">
+		<LinearLayout android:id="@+id/MainMenu_LinearLayout1"
+			android:layout_alignParentTop="true" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="center_horizontal"
+			android:paddingBottom="5dip">
+			<Button android:layout_width="100dip" android:layout_height="100dip"
+				android:background="@drawable/mainmenu_touchpad" android:id="@+id/MainMenu_Button_TouchPad"
+				android:layout_marginRight="15dip">
+			</Button>
+			<Button android:background="@drawable/mainmenu_file_explorer"
+				android:id="@+id/MainMenu_Button_File_Explorer"
+				android:layout_width="100dip" android:layout_height="100dip"
+				android:layout_marginLeft="15dip">
+			</Button>
+
+		</LinearLayout>
+		<LinearLayout android:id="@+id/MainMenu_LinearLayout2"
+			android:layout_below="@+id/MainMenu_LinearLayout1"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="center_horizontal" android:padding="5dip">
+			<Button android:background="@drawable/mainmenu_pptcontrol"
+				android:id="@+id/MainMenu_Button_PPTControl" android:layout_width="100dip"
+				android:layout_height="100dip" android:layout_marginRight="15dip">
+			</Button>
+			<Button android:background="@drawable/mainmenu_joystick"
+				android:id="@+id/Mainmenu_Button_JoyStick" android:layout_width="100dip"
+				android:layout_height="100dip" android:layout_marginLeft="15dip">
+			</Button>
+
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="center_horizontal"
+			android:layout_below="@+id/MainMenu_LinearLayout2"
+			android:paddingTop="5dip">
+
+			<Button android:layout_width="100dip" android:layout_height="100dip"
+				android:background="@drawable/mainmenu_options" android:id="@+id/MainMenu_Button_Options"
+				android:layout_marginRight="15dip">
+			</Button>
+			<Button android:background="@drawable/mainmenu_help"
+				android:id="@+id/MainMenu_Button_Help" android:layout_width="100dip"
+				android:layout_height="100dip" android:layout_marginLeft="15dip">
+			</Button>
+		</LinearLayout>
+	</RelativeLayout>
+
+</LinearLayout>

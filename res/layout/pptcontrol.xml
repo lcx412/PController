@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/touch_bg">
+	<qrnu.pcontroller.client.view.PPTTouchView
+		android:id="@+id/pptTouchView" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="65dp" android:orientation="horizontal"
+		android:layout_gravity="top">
+
+		<Button android:id="@+id/pptprevious" android:layout_width="0dp"
+			android:layout_height="fill_parent" android:layout_weight="1"
+			android:layout_marginRight="5dp" android:background="@drawable/pptprevious_xml" />
+		<Button android:id="@+id/pptnext" android:layout_width="0dp"
+			android:layout_height="fill_parent" android:layout_weight="1"
+			android:layout_marginLeft="5dp" android:background="@drawable/pptnext_xml" />
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="65dp" android:orientation="horizontal"
+		android:layout_gravity="bottom">
+
+		<qrnu.pcontroller.client.view.PPTButtonView
+			android:id="@+id/pptleftButtonView" android:layout_width="0dp"
+			android:layout_height="fill_parent" android:layout_weight="1"
+			android:layout_marginRight="5dp" android:background="@drawable/leftbutton_xml" />
+		<qrnu.pcontroller.client.view.PPTButtonView
+			android:id="@+id/pptrightButtonView" android:layout_width="0dp"
+			android:layout_height="fill_parent" android:layout_weight="1"
+			android:layout_marginLeft="5dp" android:background="@drawable/rightbutton_xml" />
+	</LinearLayout>
+</FrameLayout>

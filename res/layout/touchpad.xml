@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/touch_bg">
+	<qrnu.pcontroller.client.view.TouchView
+		android:id="@+id/TouchView" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+	<LinearLayout android:id="@+id/buttonLayout"
+		android:layout_width="fill_parent" android:layout_height="65dp"
+		android:orientation="horizontal" android:layout_gravity="bottom">
+
+		<qrnu.pcontroller.client.view.ButtonView
+			android:id="@+id/leftButtonView" android:layout_width="0dp"
+			android:layout_height="fill_parent" android:layout_weight="1"
+			android:layout_marginRight="5dp" android:background="@drawable/leftbutton_xml" />
+		<qrnu.pcontroller.client.view.ButtonView
+			android:id="@+id/rightButtonView" android:layout_width="0dp"
+			android:layout_height="fill_parent" android:layout_weight="1"
+			android:layout_marginLeft="5dp" android:background="@drawable/rightbutton_xml" />
+	</LinearLayout>
+</FrameLayout>

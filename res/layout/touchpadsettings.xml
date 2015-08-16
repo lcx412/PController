@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:focusableInTouchMode="true" android:orientation="vertical"
+	android:background="@drawable/options">
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/text_options"
+		android:textColor="@color/navy" android:textSize="22dp"
+		android:textStyle="bold" android:gravity="center_horizontal"
+		android:padding="2dp" />
+	<View android:layout_width="fill_parent" android:background="@color/navy"
+		android:layout_height="2dp" android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp" android:layout_marginBottom="8dp" />
+
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout android:layout_height="wrap_content"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:padding="5dp" android:layout_marginTop="8dp">
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_gravity="left"
+				android:textColor="@color/black" android:text="@string/pref_move_sensitivity"
+				android:textSize="18dp" />
+
+			<SeekBar android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:max="50"
+				android:id="@+id/pref_move_sensitivity" android:focusable="true"
+				android:fadingEdge="horizontal" android:visibility="visible"
+				android:thumb="@drawable/thumb" android:progressDrawable="@drawable/seekbar" />
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_marginTop="8dp" android:layout_height="wrap_content"
+				android:layout_gravity="left" android:textColor="@color/black"
+				android:text="@string/pref_wheel_sensitivity" android:textSize="18dp"
+				android:id="@+id/pref_wheel_sensitivity_text" />
+
+			<SeekBar android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:max="100"
+				android:id="@+id/pref_wheel_sensitivity" android:focusable="true"
+				android:fadingEdge="horizontal" android:visibility="visible"
+				android:thumb="@drawable/thumb" android:progressDrawable="@drawable/seekbar" />
+
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_marginTop="8dp" android:layout_width="fill_parent"
+				android:orientation="horizontal">
+
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="@color/black"
+					android:text="@string/pref_hold_delay" android:textSize="18dp" />
+
+				<EditText android:id="@+id/pref_hold_delay"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:textSize="18dp" android:inputType="number" />
+			</LinearLayout>
+
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_marginTop="5dp" android:layout_width="fill_parent"
+				android:orientation="horizontal">
+
+				<TextView android:id="@+id/pref_screen_capture_text"
+					android:layout_width="wrap_content" android:layout_gravity="left|center_vertical"
+					android:layout_height="wrap_content" android:textSize="18dp"
+					android:layout_weight="1" android:text="@string/pref_screen_capture"
+					android:textColor="@color/black" />
+
+				<CheckBox android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:id="@+id/pref_screen_capture"
+					android:focusable="true" android:layout_gravity="right|center_vertical" />
+			</LinearLayout>
+			
+			<LinearLayout android:layout_height="wrap_content"
+				android:layout_marginTop="5dp" android:layout_width="fill_parent"
+				android:orientation="horizontal">
+
+				<TextView android:id="@+id/pref_shake_switch_text"
+					android:layout_width="wrap_content" android:layout_gravity="left|center_vertical"
+					android:layout_height="wrap_content" android:textSize="18dp"
+					android:layout_weight="1" android:text="@string/pref_shake_switch"
+					android:textColor="@color/black" />
+
+				<CheckBox android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:id="@+id/pref_shake_switch"
+					android:focusable="true" android:layout_gravity="right|center_vertical" />
+			</LinearLayout>
+
+			<Button android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="@string/text_system_options"
+				android:id="@+id/pref_system_options" android:layout_margin="25dp"
+				android:textSize="20dp" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

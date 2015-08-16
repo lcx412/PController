@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="@drawable/options">
+
+	<TextView android:text="@string/text_button_settings"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:textSize="22dp" android:textStyle="bold" android:gravity="center_horizontal"
+		android:padding="2dp" android:textColor="@color/navy" />
+
+	<View android:layout_width="fill_parent" android:background="@color/navy"
+		android:layout_height="2dp" android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp" android:layout_marginBottom="8dp" />
+
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:padding="5dp"
+		android:layout_marginTop="8dp">
+		<TableLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:stretchColumns="1">
+
+			<TableRow>
+
+				<TextView android:text="@string/butsetting_btup"
+					android:textColor="@color/black" android:textSize="18dp" />
+				<EditText android:id="@+id/butsetting_btEditActionUp"
+					android:editable="false" />
+				<Button android:id="@+id/butsetting_btSelectActionUp"
+					android:text="@string/butsetting_btActionSelect" />
+			</TableRow>
+
+			<TableRow>
+				<TextView android:text="@string/butsetting_btleft"
+					android:textColor="@color/black" android:textSize="18dp" />
+				<EditText android:id="@+id/butsetting_btEditActionLeft"
+					android:editable="false" />
+				<Button android:id="@+id/butsetting_btSelectActionLeft"
+					android:text="@string/butsetting_btActionSelect" />
+			</TableRow>
+
+			<TableRow>
+				<TextView android:text="@string/butsetting_btright"
+					android:textColor="@color/black" android:textSize="18dp" />
+				<EditText android:id="@+id/butsetting_btEditActionRight"
+					android:editable="false" />
+				<Button android:id="@+id/butsetting_btSelectActionRight"
+					android:text="@string/butsetting_btActionSelect" />
+			</TableRow>
+
+			<TableRow>
+				<TextView android:text="@string/butsetting_btdown"
+					android:textColor="@color/black" android:textSize="18dp" />
+				<EditText android:id="@+id/butsetting_btEditActionDown"
+					android:editable="false" />
+				<Button android:id="@+id/butsetting_btSelectActionDown"
+					android:text="@string/butsetting_btActionSelect" />
+			</TableRow>
+
+			<TableRow>
+				<TextView android:text="A:" android:textColor="@color/black"
+					android:textSize="18dp" />
+				<EditText android:id="@+id/butsetting_btEditActionA"
+					android:editable="false" />
+				<Button android:id="@+id/butsetting_btSelectActionA"
+					android:text="@string/butsetting_btActionSelect" />
+			</TableRow>
+
+			<TableRow>
+				<TextView android:text="B:" android:textColor="@color/black"
+					android:textSize="18dp" />
+				<EditText android:id="@+id/butsetting_btEditActionB"
+					android:editable="false" />
+				<Button android:id="@+id/butsetting_btSelectActionB"
+					android:text="@string/butsetting_btActionSelect" />
+			</TableRow>
+
+			<TableRow>
+				<TextView android:text="C:" android:textColor="@color/black"
+					android:textSize="18dp" />
+				<EditText android:id="@+id/butsetting_btEditActionC"
+					android:editable="false" />
+				<Button android:id="@+id/butsetting_btSelectActionC"
+					android:text="@string/butsetting_btActionSelect" />
+			</TableRow>
+
+			<TableRow>
+				<TextView android:text="D:" android:textColor="@color/black"
+					android:textSize="18dp" />
+				<EditText android:id="@+id/butsetting_btEditActionD"
+					android:editable="false" />
+				<Button android:id="@+id/butsetting_btSelectActionD"
+					android:text="@string/butsetting_btActionSelect" />
+			</TableRow>
+
+		</TableLayout>
+	</ScrollView>
+</LinearLayout>

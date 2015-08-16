@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/gamecontrol_bg">
+	<RelativeLayout android:id="@+id/GameControl_RelativeLayout1"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_alignParentTop="true">
+
+		<ImageButton android:id="@+id/GameControl_Button_ESC"
+			android:layout_width="70dip" android:layout_height="50dip"
+			android:layout_alignParentLeft="true" android:scaleType="fitXY"
+			android:background="#00000000" android:src="@drawable/gamecontrol_button_esc_xml">
+		</ImageButton>
+
+		<ImageButton android:layout_centerHorizontal="true"
+			android:scaleType="centerInside" android:layout_height="50dip"
+			android:layout_width="wrap_content" android:id="@+id/GameControl_Button_SensorSwitch"
+			android:background="#00000000" android:src="@drawable/gamecontrol_sensor_off_xml">
+		</ImageButton>
+
+		<ImageButton android:layout_width="70dip"
+			android:layout_height="50dip" android:id="@+id/GameControl_Button_Enter"
+			android:layout_alignParentRight="true" android:scaleType="fitXY"
+			android:background="#00000000" android:src="@drawable/gamecontrol_button_enter_xml">
+		</ImageButton>
+
+	</RelativeLayout>
+	<qrnu.pcontroller.client.view.KeysView
+		android:id="@+id/GameControl_ControlPannel"
+		android:layout_alignParentBottom="true" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_below="@+id/GameControl_RelativeLayout1" />
+
+</RelativeLayout>

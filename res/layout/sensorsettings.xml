@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:focusableInTouchMode="true" android:orientation="vertical"
+	android:background="@drawable/options">
+
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/text_sensor_settings"
+		android:textColor="@color/navy" android:textSize="22dp"
+		android:textStyle="bold" android:gravity="center_horizontal"
+		android:padding="2dp" />
+	<View android:layout_width="fill_parent" android:background="@color/navy"
+		android:layout_height="2dp" android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp" android:layout_marginBottom="8dp" />
+
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:padding="5dp"
+			android:layout_marginTop="5dp" android:orientation="vertical">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="horizontal">
+				<TextView android:layout_weight="1" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="@color/black"
+					android:layout_gravity="left|center_vertical" android:text="@string/ss_high_sensitivity"
+					android:textSize="18dp" />
+				<CheckBox android:id="@+id/ss_high_sensitivity_on"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:focusable="true" android:layout_gravity="right|center_vertical" />
+			</LinearLayout>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textColor="@color/black"
+				android:text="@string/ss_angle_settings" android:textSize="18dp" />
+			<TableLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:padding="5dp"
+				android:layout_marginTop="8dp" android:stretchColumns="0">
+
+				<TableRow>
+					<TextView android:text="@string/ss_lr" android:textColor="@color/black"
+						android:textSize="18dp" />
+					<EditText android:id="@+id/ss_lr" android:width="105dp"
+						android:inputType="number" />
+				</TableRow>
+
+				<TableRow>
+					<TextView android:text="@string/ss_up" android:textColor="@color/black"
+						android:textSize="18dp" />
+					<EditText android:id="@+id/ss_up" android:inputType="numberSigned" />
+				</TableRow>
+
+				<TableRow>
+					<TextView android:text="@string/ss_down"
+						android:textColor="@color/black" android:textSize="18dp" />
+					<EditText android:id="@+id/ss_down" android:inputType="number" />
+				</TableRow>
+
+			</TableLayout>
+			<TextView android:text="@string/ss_tutorial"
+				android:textColor="@color/black" android:textSize="18dp"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal" android:gravity="center_horizontal"
+				android:layout_marginTop="8dp" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
+				

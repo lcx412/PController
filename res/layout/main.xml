@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/login" android:focusableInTouchMode="true">
+
+	<ImageView android:id="@+id/pTitle" android:src="@drawable/icon"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true" android:padding="3dp" />
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:padding="5dp"
+		android:layout_below="@id/pTitle" android:id="@+id/rlayout_ip">
+
+		<EditText android:layout_height="wrap_content"
+			android:focusable="true" android:enabled="true" android:id="@+id/pEtIP"
+			android:layout_width="fill_parent" android:layout_weight="1"
+			android:layout_alignParentRight="true" android:text="192.168."
+			android:hint="@string/text_ip_hint" android:inputType="number|text" />
+
+		<Button android:id="@+id/pbtReset" android:layout_width="45dp"
+			android:layout_height="45dp" android:layout_alignParentRight="true"
+			android:background="@drawable/reset" android:focusable="false" />
+
+	</RelativeLayout>
+
+	<Button android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/button_connect"
+		android:layout_marginRight="5dp" android:layout_marginBottom="5dp"
+		android:id="@+id/pbtnConnect" android:layout_alignParentRight="true"
+		android:layout_below="@id/rlayout_ip" android:textColor="#000" />
+
+	<EditText android:layout_height="wrap_content"
+		android:focusable="true" android:enabled="true" android:id="@+id/pEtPwd"
+		android:layout_marginLeft="5dp" android:layout_marginBottom="5dp"
+		android:layout_width="fill_parent" android:layout_toLeftOf="@id/pbtnConnect"
+		android:layout_below="@id/rlayout_ip" android:hint="@string/text_pwd_hint"
+		android:inputType="textPassword" />
+
+	<TextView android:id="@+id/pRecentHosts" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/text_recentlyUsedHosts"
+		android:textColor="@color/gold" android:layout_marginTop="5px"
+		android:layout_marginBottom="5px" android:textStyle="bold"
+		android:layout_centerHorizontal="true" android:layout_below="@id/pEtPwd"
+		android:textSize="15dp" />
+
+	<ListView android:id="@+id/plvHosts" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_below="@id/pRecentHosts"
+		android:layout_marginRight="5dp" android:layout_marginTop="5dp"
+		android:layout_marginLeft="8dp" android:scrollbars="vertical"
+		android:cacheColorHint="#00000000" />
+
+</RelativeLayout>
